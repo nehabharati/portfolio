@@ -8,16 +8,18 @@
         <link rel="stylesheet" href="css/index.css">
         <link href="styles/output.css" type="text/css" rel="stylesheet" />
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    </head>
+     </head>
     <body >  
             <header class="text-gray-500 body-font">
                 <div class="container flex flex-wrap p-5 flex-col md:flex-row items-center"> 
                   <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
-                    <a href="#about" class="text-gray-700 mr-5 hover:text-gray-500 hover:no-underline cursor-pointer text-xl">About</a>
-                    <a href="#skills" class="text-gray-700 mr-5 hover:text-gray-500 hover:no-underline cursor-pointer text-xl">Skills</a>
-                    <a href="#portfolio" class="text-gray-700 mr-5 hover:text-gray-500 hover:no-underline cursor-pointer text-xl">Portfolio</a>
-                    <a href="#contact" class="text-gray-700 mr-5 hover:text-gray-500 hover:no-underline cursor-pointer text-xl">Contact</a>
+                    <a href="#about" class="text-gray-700 mr-5 hover:text-gray-500 hover:no-underline cursor-pointer text-xl">ABOUT</a>
+                    <a href="#skills" class="text-gray-700 mr-5 hover:text-gray-500 hover:no-underline cursor-pointer text-xl">SKILLS</a>
+                    <a href="#portfolio" class="text-gray-700 mr-5 hover:text-gray-500 hover:no-underline cursor-pointer text-xl">PORTFOLIO</a>
+                    <a href="#contact" class="text-gray-700 mr-5 hover:text-gray-500 hover:no-underline cursor-pointer text-xl">CONTACT</a>
+                    <div class="switch">Dark mode:              
+                      <span class="inner-switch">OFF</span>
+                  </div>
                   </nav> 
                 </div>
               </header>
@@ -47,8 +49,8 @@
             <section id="about" class="text-gray-700 body-font">
                 <div class="container px-5 py-2 mx-auto flex flex-col">
                     <div class="lg:w-4/6 mx-auto">
-                    <div class="rounded-lg h-20 overflow-hidden">
-                        <h1 class="text-center text-6xl text-uppercase">About</h1>
+                    <div class="h-20 overflow-hidden lg:h-10 overflow-visible">
+                        <h1 class="text-center text-6xl text-uppercase">ABOUT</h1>
                     </div>
                     <div class="flex flex-col sm:flex-row mt-10 justify-center"> 
                         <div class="sm:w-full md:px-4 sm:pl-8 sm:py-8 border-gray-300 lg:py-32 mt-4 pt-4 mb-10 sm:mt-0 text-center sm:text-left">
@@ -63,7 +65,7 @@
             <hr/>
 
             <section id="skills" class="text-gray-700 body-font">
-                <h1 class="text-center text-6xl text-uppercase pt-10">Skills</h1>
+                <h1 class="text-center text-6xl text-uppercase pt-10">SKILLS</h1>
                 <div class="container px-5 py-24 mx-auto">
                   <div class="flex flex-wrap -m-4 justify-center items-center ml-16">
                     <div class="lg:w-1/4 md:w-full p-4 w-1/2">
@@ -147,7 +149,7 @@
               <hr/>
 
             <section id="portfolio" class="text-gray-700 body-font" > 
-                <h1 class="text-center text-6xl text-uppercase pt-10">Portfolio</h1>
+                <h1 class="text-center text-6xl text-uppercase pt-10">PORTFOLIO</h1>
                 <div class="container px-5 py-24 mx-auto">
                   <div class="flex flex-wrap -m-4 justify-center items-center"> 
                     <div class="lg:w-1/2 lg:h-full md:w-1/2 p-4 w-full">
@@ -206,13 +208,13 @@
                   </p>
                   <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
                     <a class="text-gray-700 mx-2 text-xl transform hover:scale-150" href="https://twitter.com/nehabharati21" target="_blank">
-                        <i class="fab fa-twitter"></i>
+                        <img class="icon" src="./images/twitter-3.svg" alt="">
                     </a> 
                     <a class="text-gray-700 mx-2 text-xl transform hover:scale-150" href="https://codepen.io/nehabh21" target="_blank">
-                        <i class="fab fa-codepen"></i>
+                      <img class="icon" src="./images/codepen-icon.svg" alt="">
                     </a> 
                     <a class="text-gray-700 mx-2 text-xl transform hover:scale-150" href="https://www.linkedin.com/in/neha-bharati-36033963/" target="_blank">
-                        <i class="fab fa-linkedin-in"></i>
+                      <img class="icon" src="./images/linkedin-icon-2.svg" alt="">
                     </a> 
                   </span>
                 </div>
@@ -238,6 +240,18 @@
                       document.body.scrollTop = 0;
                       document.documentElement.scrollTop = 0;
                       }
+              </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+              <script type="text/javascript">
+                $( ".inner-switch" ).on("click", function() {
+                if( $( "body" ).hasClass( "dark" )) {
+                  $( "body" ).removeClass( "dark" );
+                  $( ".inner-switch" ).text( "OFF" );
+                } else {
+                  $( "body" ).addClass( "dark" );
+                  $( ".inner-switch" ).text( "ON" );
+                }
+            });
               </script>
     </body>
 </html>
