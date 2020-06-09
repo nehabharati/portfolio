@@ -319,22 +319,13 @@ i {
   transform: rotate(-135deg);
   -webkit-transform: rotate(-135deg);
 }
-    
-.switch {
-  align-self: flex-end;
-  margin: 0.9375rem;
-}
 
 .inner-switch {
   display: inline-block;
-  cursor: pointer;
-  border: 1px solid #555;
-  border-radius: 1.25rem;
+  cursor: pointer; 
   width: 3.125rem;
-  text-align: center;
-  font-size: 1rem;
-  padding: 0.1875rem;
-  margin-left: 0.3125rem;
+  height:3.125rem; 
+  padding: 0.1875rem; 
 }
 
 .dark,

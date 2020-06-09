@@ -17,8 +17,8 @@
                     <a href="#skills" class="text-gray-700 mr-5 hover:text-gray-500 hover:no-underline cursor-pointer text-xl">SKILLS</a>
                     <a href="#portfolio" class="text-gray-700 mr-5 hover:text-gray-500 hover:no-underline cursor-pointer text-xl">PORTFOLIO</a>
                     <a href="#contact" class="text-gray-700 mr-5 hover:text-gray-500 hover:no-underline cursor-pointer text-xl">CONTACT</a>
-                    <div class="switch">Dark mode:              
-                      <span class="inner-switch">OFF</span>
+                    <div class="switch">             
+                      <span class="inner-switch"><img src="./images/light-bulb-svgrepo-com.svg" alt=""></span>
                   </div>
                   </nav> 
                 </div>
@@ -246,10 +246,10 @@
                 $( ".inner-switch" ).on("click", function() {
                 if( $( "body" ).hasClass( "dark" )) {
                   $( "body" ).removeClass( "dark" );
-                  $( ".inner-switch" ).text( "OFF" );
+                  // $( ".inner-switch" ).text( "OFF" );
                 } else {
                   $( "body" ).addClass( "dark" );
-                  $( ".inner-switch" ).text( "ON" );
+                  // $( ".inner-switch" ).text( "ON" );
                 }
             });
               </script>
