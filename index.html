@@ -8,6 +8,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/index_minify.css">
         <link href="styles/output.css" type="text/css" rel="stylesheet" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
      </head>
     <body >  
             <header class="text-gray-500 body-font">
@@ -226,8 +227,8 @@
                 </div>
                 <button onclick="topFunction()" id="myBtn" class="bg-gray-500" title="Go to top"><i class="arrow up"></i></button>
               </footer> 
-              <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-              <script type="text/javascript">
+              
+              <script async defer type="text/javascript">
                       var mybutton = document.getElementById("myBtn");
               
                       // When the user scrolls down 20px from the top of the document, show the button
@@ -248,7 +249,7 @@
                       }
               </script>
               
-              <script type="text/javascript">
+              <script async defer type="text/javascript">
                 $( ".inner-switch" ).on("click", function() {
                 if( $( "body" ).hasClass( "dark" )) {
                   $( "body" ).removeClass( "dark" ); 
