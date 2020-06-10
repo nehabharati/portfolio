@@ -30,10 +30,28 @@ img {
   height: 25px;
 }
  
-//hero component
-.intro {
-    margin-left: 50px;
+.image {
+  display: block;
+width: 100%;
+min-width: 100%;
 }
+//hero component
+// .intro {
+//     width:auto;
+// }
+
+// @media only screen and (max-width:640px) {
+//   .intro {
+//     margin-left: 80px; 
+//   }
+// }
+
+// @media only screen and (min-width:768px) {
+//   .intro {
+//     margin-left: 150px; 
+//   }
+// }
+
     .box {
       width: 250px;
       height: 250px;
@@ -270,7 +288,7 @@ main {
     width: 100px;
     height: 100px;
     justify-self: center;
-    margin-bottom: 100px;
+    // margin-bottom: 100px;
  }
 
 .portfolio {
@@ -330,14 +348,32 @@ i {
 
 .dark,
 .dark * {
-    background-color: #333;
+    background-color: #333; 
     color: #e6e6e6;
     border-color: #e6e6e6;
-    h3,a {
+    h3,a,h1 {
       color: #e6e6e6;
     }
     h2 {
       color: #e6e6e6;
       opacity: 0.8;
     }
+}
+  
+
+.animBlock {
+  opacity: 0;
+  filter: alpha(opacity=0);
+  position: relative;
+  -webkit-transition: all .55s ease-in;
+  -moz-transition: all .55s ease-in;
+  -ms-transition: all .55s ease-in;
+  -o-transition: all .55s ease-in;
+  transition: all .55s ease-in;
+}
+.animBlock[data-position="left"] { left: -20%; }
+.animBlock[data-position="left"].viewed {
+  left: 0%;
+  opacity: 1;
+  filter: alpha(opacity=100);
 }
