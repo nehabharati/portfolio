@@ -28,31 +28,9 @@ img {
 .icon {
   width:25px;
   height: 25px;
-}
- 
-.image {
-  display: block;
-width: 100%;
-min-width: 100%;
-}
-//hero component
-// .intro {
-//     width:auto;
-// }
+} 
 
-// @media only screen and (max-width:640px) {
-//   .intro {
-//     margin-left: 80px; 
-//   }
-// }
-
-// @media only screen and (min-width:768px) {
-//   .intro {
-//     margin-left: 150px; 
-//   }
-// }
-
-    .box {
+.box {
       width: 250px;
       height: 250px;
       position: relative; 
@@ -341,8 +319,8 @@ i {
 .inner-switch {
   display: inline-block;
   cursor: pointer; 
-  width: 3.125rem;
-  height:3.125rem; 
+  width: 2.125rem;
+  height:2.125rem; 
   padding: 0.1875rem; 
 }
 
